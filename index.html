@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasnah Latifiyah Agizni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #ffffff; /* Warna latar belakang putih */
+        color: #000000; /* Warna font hitam */
+        font-family: Arial, sans-serif;
+      }
+      .btn-submit {
+  background-color: #28a745; /* Warna hijau */
+  color: #ffffff; /* Warna teks putih */
+  border: none; /* Menghapus border default */
+}
+
+.btn-submit:hover {
+  background-color: #218838; /* Warna hijau lebih gelap saat hover */
+  color: #ffffff; /* Warna teks tetap putih saat hover */
+}
+
+/* Jika tombol tidak menggunakan class khusus */
+button[type="submit"] {
+  background-color: #28a745; /* Warna hijau */
+  color: #ffffff; /* Warna teks putih */
+  border: none; /* Menghapus border default */
+}
+
+button[type="submit"]:hover {
+  background-color: #218838; /* Warna hijau lebih gelap saat hover */
+  color: #ffffff; /* Warna teks tetap putih saat hover */
+}
+
+      .navbar {
+        background-color: #1367bb !important; /* Warna latar belakang navbar */
+      }
+
+      header {
+        margin-top: 100px; /* Tambahkan jarak dari atas untuk menyesuaikan dengan navbar fixed-top */
+        text-align: center;
+      }
+
+      header img {
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      header figure {
+        display: inline-block;
+      }
+
+      header figcaption {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      main .main_title {
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      footer {
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      footer img {
+        width: 100px;
+        margin: 0 10px;
+      }
+
+      footer p {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 10px 0;
+        box-shadow: 0 4px 8px rgba(231, 114, 79, 0.1);
+      }
+
+      .card_header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .card_image img {
+        border-radius: 50%;
+        width: 80px; /* Ukuran foto lebih kecil */
+        height: 80px; /* Ukuran foto lebih kecil */
+        object-fit: cover;
+      }
+
+      .card_description {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .card_content {
+        padding: 10px;
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <form class="d-flex w-100" role="search" id="formPencarian">
+          <input class="form-control me-2 flex-grow-1" type="search" placeholder="search" aria-label="search" id="inputPencarian">
+          <button class="btn btn-outline-success" type="submit">search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container">
+      <figure>
+        <img src="./assets/hasnah.jpg" alt="Hasnah Latifiyah Agizni" id="hasnahlatifiyahagizni" />
+        <figcaption class="profile-info">
+          <div class="profile-name">Hasnah Latifiyah Agizni</div>
+          <div class="profile-nim">(240411100130)</div>
+        </figcaption> 
+      </figure>
+      <section class="about-me">
+        <p>
+          Halo! Nama saya <strong>Hasnah Latifiyah Agizni</strong>, seorang mahasiswa Teknik Informatika di Universitas Trunojoyo Madura (UTM). 
+          Saya lahir di Pamekasan pada <strong>31 Juli 2005</strong> dan saat ini saya tinggal di Pamekasan bersama keluarga tercinta. 
+          Namun, karena melanjutkan studi di UTM, saya kini merantau dan tinggal di kos di Telang, Kamal, Bangkalan.
+        </p>
+        <p>
+          Saya sangat antusias mempelajari dunia teknologi dan siap untuk menghadapi tantangan yang ada di bidang ini. 
+          Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi saya di <strong>+6287717402191</strong>.
+        </p>
+        <p>
+          Terima kasih telah mengunjungi halaman saya!
+        </p>
+      </section>
+      
+      <style>
+        .about-me {
+          text-align: center;
+          margin: 40px auto;
+          padding: 20px;
+          max-width: 800px;
+          background-color: #f9f9f9;
+          border-radius: 8px;
+        }
+      
+        .about-me p {
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+      
+        .about-me strong {
+          font-weight: bold;
+          color: #333;
+        }
+      </style>
+      
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+      <div class="main_title">
+        <h2>Informatika'2024</h2>
+        <span>Biodata angkatan Teknik Informatika 2024.</span>
+      </div>
+      <ul id="friend_list">
+        <!-- Data akan diisi di sini oleh JavaScript -->
+      </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section>
+        <img src="./assets/himatif.png" alt="Himatif">
+        <img src="./assets/booting.png" alt="Booting & Memory 2024">
+      </section>
+      <p>&copy; 2024 Hasnah latifiyah Agizni, All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // Fungsi untuk mengambil data dari file JSON
+      async function getData() {
+        const response = await fetch('./data.json');
+        const data = await response.json();
+        return data;
+      }
+
+      // Fungsi untuk mengisi elemen friend_list dengan data dari JSON
+      async function friendListsElement() {
+        const friendLists = document.getElementById("friend_list");
+        const data = await getData(); // Tunggu data dari getData()
+
+        const lists = `
+          ${data.map(i => `
+            <li>
+              <figure class="card">
+                <div class="card_header">
+                  <div class="card_image">
+                    <img src="${i.fotoselfie}" alt="${i.nama}">
+                  </div>
+                  <div class="card_description">
+                    <span>${i.nama}</span>
+                    <span>${parseInt(i.nim)}</span>
+                  </div>
+                </div>
+                <figcaption class="card_content">
+                  <span>TTL : ${i.ttl}</span>
+                  <span>Alamat : ${i.alamat}</span>
+                  <span>NoHP : ${i.no}</span>
+                </figcaption>
+              </figure>
+            </li>
+          `).join("")}
+        `;
+
+        friendLists.innerHTML = lists;
+      }
+
+      // Memanggil fungsi untuk mengisi elemen dengan data
+      friendListsElement();
+
+      // Fungsi pencarian
+      document.getElementById('formPencarian').addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah form dari submit normal
+        const query = document.getElementById('inputPencarian').value.toLowerCase(); // Mengambil nilai input dan mengubah ke lowercase
+        const daftarItem = document.querySelectorAll('#friend_list li'); // Mengambil semua elemen li di dalam friend_list
+
+        let ditemukan = false; // Variabel untuk melacak apakah hasil ditemukan
+
+        daftarItem.forEach(item => {
+          if (item.textContent.toLowerCase().includes(query)) { // Perbandingan yang lebih longgar
+            item.style.display = ''; // Tampilkan item yang cocok
+            ditemukan = true;
+            item.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll ke item yang cocok
+          } else {
+            item.style.display = 'none'; // Sembunyikan item yang tidak cocok
+          }
+        });
+
+        if (!ditemukan) {
+          alert('Nama tidak ditemukan'); // Tampilkan pesan jika nama tidak ditemukan
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
